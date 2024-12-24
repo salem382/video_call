@@ -53,7 +53,7 @@ export class VideoCallComponent implements OnInit {
     await this.peerConnection.setLocalDescription(offer);
     console.log('Offer set as local description:', offer);
   
-      this.signalRService.sendSignal('0976311d-ae0d-43e6-8933-7510c317b1ab', offer);
+      this.signalRService.sendSignal('28a8ae31-1dc9-4efc-9736-496b3e8fbd8b', offer);
       console.log("Offer sent");
  
   }

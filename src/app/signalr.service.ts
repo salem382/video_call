@@ -51,7 +51,8 @@ export class SignalRService {
       await this.peerConnection.setLocalDescription(answer);
 
       // Send the answer back to the caller
-      this.sendSignal('0976311d-ae0d-43e6-8933-7510c317b1ab', { type: 'answer', sdp: answer });
+      this.sendSignal('28a8ae31-1dc9-4efc-9736-496b3e8fbd8b', { type: 'answer', sdp: answer });
+      //28a8ae31-1dc9-4efc-9736-496b3e8fbd8b
     }
 
     // When receiving an answer
