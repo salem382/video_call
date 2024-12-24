@@ -28,7 +28,7 @@ export class SignalRService {
   async setupLocalStream() {
     try {
       this.localStream = await navigator.mediaDevices.getUserMedia({
-        video: false,
+        video: true,
         audio: true,
       });
       console.log('Local stream initialized:', this.localStream);
